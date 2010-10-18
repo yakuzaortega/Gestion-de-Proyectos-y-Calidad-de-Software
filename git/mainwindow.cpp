@@ -15,4 +15,17 @@ MainWindow::~MainWindow()
 
 void MainWindow::cambiarTexto(){
 
+    QString temporal, uno, dos;
+
+    uno = ui->txtUno->text();
+    dos = ui->txtDos->text();
+
+    temporal = uno;
+    uno = dos;
+    dos = temporal;
+
+    ui->txtUno->setText(uno);
+    ui->txtDos->setText(dos);
+
+
 }
